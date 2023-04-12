@@ -7,10 +7,12 @@ async function fetchShowDetails(id) {
   const response = await fetch(
     `https://api.tvmaze.com/shows/${id}?embed[]=seasons&embed[]=episodes&embed[]=cast&embed[]=crew`
   );
+
   const showDetails = await response.json();
   return showDetails;
 }
 
+//remove HTML tags from retrieved data
 const removeTags = (text) => {
   if (text === null || text === "") {
     return false;
@@ -21,6 +23,8 @@ const removeTags = (text) => {
 };
 
 const Show = async ({ id }) => {
+  // uncomment below line to show loader with suspense component
+  // await new Promise((resolve) => setTimeout(resolve, 1000));
   const show = await fetchShowDetails(id);
 
   return (

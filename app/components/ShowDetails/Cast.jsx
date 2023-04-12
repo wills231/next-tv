@@ -1,7 +1,10 @@
 const CastList = ({ cast }) => {
+  // retrieve array of unique person id's
   const uniqueIds = [
     ...new Set(cast.map((castMember) => castMember.person.id)),
   ];
+
+  // map over unique id's to create new array of cast members
   const uniqueCastMembers = uniqueIds.map((id) =>
     cast.find((castMember) => castMember.person.id === id)
   );

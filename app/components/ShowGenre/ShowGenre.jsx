@@ -8,6 +8,8 @@ function GenreShows({ genre }) {
   const [shows, setShows] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // useEffect hook is called whenever the genre variable changes, this
+  // was passed in as a prop from the genre component
   useEffect(() => {
     async function fetchShows() {
       const response = await fetch(`${BASE_API_URL}`);
@@ -18,6 +20,7 @@ function GenreShows({ genre }) {
     fetchShows();
   }, [genre]);
 
+  // slider config
   const settings = {
     dots: false,
     infinite: false,

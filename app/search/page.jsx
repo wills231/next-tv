@@ -26,11 +26,11 @@ export const SearchPage = () => {
   }
 
   return (
-    <div>
+    <>
       <h1>Search your favourite shows</h1>
       <ShowSearch getSearchResults={(results) => setShows(results)} />
       <ShowSearchResults showData={showData} />
-    </div>
+    </>
   );
 };
 export default SearchPage;

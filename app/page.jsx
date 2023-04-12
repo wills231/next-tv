@@ -5,9 +5,9 @@ import GenreShows from "./components/ShowGenre/ShowGenre";
 export const HomePage = () => {
   return (
     <>
-      <h1 className="u-visually-hidden">Homepage</h1>
+      <h1 className="u-visually-hidden">Homepagee</h1>
       <section id="Top Rated">
-        <h2>Highest Rated shows of all Time</h2>
+        <h2>Highest Rated shows of all Timee</h2>
         <TopRatedShows />
       </section>
       <section id="Action">
