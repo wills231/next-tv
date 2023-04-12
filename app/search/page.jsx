@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import ShowSearchResults from "../components/Search/ShowSearchResults";
 import ShowSearch from "../components/Search/ShowSearch";
 import LoadingComponent from "../components/Loader/loading";
