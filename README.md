@@ -5,14 +5,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
+
+# install Next JS
+npm install next react react-dom
+
+# Install node modules
+npm i
+
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-
-# Install node modules
-npm i
 
 # Run unit tests
 npm test
