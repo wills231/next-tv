@@ -1,0 +1,18 @@
+.c-infobox {
+  line-height: var(--line-height-alpha);
+  margin-top: 4rem;
+  &__link {
+    color: rgb(162, 164, 253);
+  }
+}
+
+.c-infobox--top,
+.c-infobox--bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  margin-bottom: 4rem;
+  @media (min-width: 320px) and (max-width: 425px) {
+    grid-template-columns: 1fr;
+  }
+}

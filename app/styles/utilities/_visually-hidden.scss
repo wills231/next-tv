@@ -1,0 +1,21 @@
+/* ==========================================================================
+		utilities.visually-hidden
+/ =========================================================================== */
+
+@use "../tools/accessibility";
+
+.u-visually-hidden {
+  @include accessibility.visually-hidden;
+}
+
+.focus\:not-visually-hidden:focus,
+.focus\:not-visually-hidden:focus-visible {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}

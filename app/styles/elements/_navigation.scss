@@ -1,0 +1,18 @@
+.c-navigation {
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  margin-right: 1.5rem;
+  @media (min-width: 320px) and (max-width: 480px) {
+    order: 2;
+  }
+  &__link {
+    padding: 0.5rem 0.5rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgba(144, 54, 203, 0.771);
+    transition: all 0.35s;
+  }
+}

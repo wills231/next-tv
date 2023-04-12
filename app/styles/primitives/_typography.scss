@@ -1,0 +1,66 @@
+/* ==========================================================================
+		typography
+/ =========================================================================== */
+
+:where(html) {
+  // Root
+  --font-size-root: 1rem;
+  --font-lineheight-root: 1;
+
+  // Sizes
+  --font-size-alpha: 2rem;
+  --line-height-alpha: 1.5;
+
+  --font-size-beta: 1.5rem;
+  --line-height-beta: 1.2;
+
+  --font-size-gamma: 1rem;
+  --line-height-gamma: var(--font-lineheight-root);
+
+  --font-size-milli: 0.75rem;
+  --line-height-milli: 1;
+
+  @media --mq-large {
+    & {
+      // Sizes
+      --font-size-alpha: 2rem;
+      --line-height-alpha: 1.1;
+
+      --font-size-beta: 1.45rem;
+      --line-height-beta: 1.2413793103;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--heading-font-size, 1rem);
+  line-height: var(--heading-line-height, 1.1);
+}
+
+h1 {
+  --heading-font-size: var(--font-size-alpha);
+  --heading-line-height: var(--line-height-alpha);
+}
+
+h2 {
+  --heading-font-size: var(--font-size-beta);
+  --heading-line-height: var(--line-height-beta);
+}
+
+h3,
+h4,
+h5,
+h6 {
+  --heading-font-size: var(--font-size-gamma);
+  --heading-line-height: var(--line-height-gamma);
+}
+
+small {
+  font-size: var(--font-size-milli);
+  line-height: var(--line-height-milli);
+}

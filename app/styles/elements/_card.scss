@@ -1,0 +1,67 @@
+.c-card-deck {
+  display: grid;
+  gap: 0.5rem;
+  @media (min-width: 1080px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  @media (min-width: 1024px) and (max-width: 1079px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (min-width: 730px) and (max-width: 1023px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 480px) and (max-width: 729px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 320px) and (max-width: 479px) {
+    grid-template-columns: repeat(1fr);
+  }
+}
+
+.c-card {
+  color: #ffffff;
+
+  @media (min-width: 320px) and (max-width: 720px) {
+    display: flex;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.c-card__search {
+  display: flex !important;
+  justify-content: center;
+}
+
+.c-card-slider {
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: flex !important;
+    justify-content: center;
+  }
+}
+
+.c-card__image {
+  @media (min-width: 320px) and (max-width: 720px) {
+    max-width: 7rem;
+  }
+}
+
+.c-card__content {
+  @media (min-width: 320px) and (max-width: 720px) {
+    margin: 1rem;
+  }
+}
+
+.c-card .c-card-content {
+  margin-top: 1rem;
+}
+
+.c-cast__card {
+  display: flex;
+  align-items: center;
+  p {
+    padding: 1rem;
+  }
+}
